@@ -10,3 +10,8 @@
 @media(max-width:760px){.site-header{height:68px}.hero{min-height:auto;padding-top:70px;grid-template-columns:1fr;grid-template-rows:auto auto auto;gap:10px}.hero-copy{padding:0 0 10px}.hero h2{font-size:clamp(47px,12vw,72px)}.hero-art{min-height:320px}.halo-one{width:min(70vw,340px)}.halo-two{width:min(56vw,270px)}.plate{width:54vw;min-width:190px}.hero-footer{margin-top:15px;font-size:8px}.hero-footer span:last-child{text-align:right;max-width:45%}.story{grid-template-columns:1fr;gap:32px}.stamp{position:absolute;right:8%;bottom:8%;width:85px;height:85px;opacity:.7}.stamp b{font-size:23px}.story-content>p:last-child{max-width:78%}.menu-heading{align-items:start;flex-direction:column;margin-bottom:35px}.menu-heading .section-index{order:-1}.menu-grid{grid-template-columns:1fr;gap:38px}.dish-art{height:clamp(250px,75vw,380px)}.dish-info h3{font-size:28px}.closing h2{font-size:clamp(38px,10vw,62px)}.site-footer{align-items:flex-start;flex-direction:column;gap:13px}.site-footer p{margin:0}}
 @media(max-width:390px){:root{--space:22px}.brand{font-size:10px}.hero h2{font-size:44px}.hero-footer{letter-spacing:.06em}.art-note{font-size:7px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* Fotografias reais nos cartões do menu */
+.dish-art.has-photo:before,.dish-art.has-photo:after{display:none}
+.dish-art .dish-photo{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.dish-art.has-photo>span{z-index:1;padding:7px 9px;background:rgba(243,235,221,.88);color:var(--ink)}
